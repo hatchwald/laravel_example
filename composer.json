@@ -8,9 +8,11 @@
         "php": "^8.0.2",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.19",
+        "laravel/horizon": "^5.11",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "mtr/post-package": "dev-main",
+        "predis/predis": "^2.0",
         "spatie/laravel-webhook-server": "^3.4"
     },
     "require-dev": {
@@ -60,7 +62,12 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
+        },
+        "platform": {
+            "ext-pcntl": "8.0",
+            "ext-posix": "8.0"
         }
+          
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
